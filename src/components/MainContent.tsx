@@ -13,7 +13,7 @@ import {
 
 const articles = [
   {
-    title: "Graceroots media and active citizenship",
+    title: "Grassroots media and active citizenship",
     date: "Sept 22, 2021",
     description:
       "The Nudge Forum's virtual conference on August 13, 2021, featured panelists Meera Devi, Dhanya Rajendran, and Barkha Dutt discussing the crucial role of grassroots media in enhancing citizen participation and pulling government services.",
@@ -42,6 +42,7 @@ const articles = [
     description:
       "Thoughts about how human trafficking in India is a severe issue with inadequate justice for victims, including low prosecution and poor rehabilitation efforts.",
     image: "https://via.placeholder.com/400",
+    link: "/article4",
   },
   {
     title: "Civic Participation: An Urgent Need",

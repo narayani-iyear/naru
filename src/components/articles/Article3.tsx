@@ -1,16 +1,61 @@
 import React from "react";
-import { Box, Typography, Container, Paper, Divider } from "@mui/material";
+import {
+  Box,
+  Typography,
+  Container,
+  Paper,
+  Divider,
+  Breadcrumbs,
+  Link,
+} from "@mui/material";
 import headerImage from "../../assets/article3-header.png";
 
 const Article3: React.FC = () => {
   return (
-    <Container className="article-container">
+    <Container
+      maxWidth="md"
+      sx={{ maxWidth: "900px" }}
+      className="article-container"
+    >
       <Paper elevation={3} sx={{ borderRadius: "8px", overflow: "hidden" }}>
-        <Box sx={{ padding: 4 }}>
-          <Typography variant="h3" gutterBottom className="article-title">
+        <Box sx={{ padding: 4, backgroundColor: "#FAF3EF" }}>
+          <Breadcrumbs aria-label="breadcrumb" sx={{ marginBottom: 2 }}>
+            <Link color="inherit" href="/">
+              Home
+            </Link>
+            <Typography color="textPrimary">
+              Strengthening the First-Mile Governance
+            </Typography>
+          </Breadcrumbs>
+          <Typography
+            variant="h4"
+            gutterBottom
+            className="article-title"
+            sx={{ fontWeight: "bold" }}
+          >
             Strengthening the First-Mile Governance
           </Typography>
-          <Typography variant="body1" paragraph className="article-content">
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "space-between",
+              alignItems: "center",
+              marginBottom: 2,
+            }}
+          >
+            <Typography variant="body2" color="textSecondary">
+              Sept 22, 2021
+            </Typography>
+            <Typography variant="body2" color="textSecondary">
+              By Narayani Iyear
+            </Typography>
+          </Box>
+          <Typography
+            variant="body1"
+            paragraph
+            className="article-content"
+            sx={{ lineHeight: 2.3 }}
+          >
             About 50 Indian cities have a population of greater than a million
             each, three agglomerations Mumbai, Delhi, and Kolkata have
             populations greater than 10 million each. More than half the
@@ -21,7 +66,12 @@ const Article3: React.FC = () => {
             expected to become majority urban in the next ten years and possibly
             sooner.
           </Typography>
-          <Typography variant="body1" paragraph className="article-content">
+          <Typography
+            variant="body1"
+            paragraph
+            className="article-content"
+            sx={{ lineHeight: 2.3 }}
+          >
             In a modern economy, cities are very important, tending to be
             economic powerhouses. For example, Mumbai accounts for a third of
             India’s tax collection. Cities provide greater freedom and
@@ -37,14 +87,28 @@ const Article3: React.FC = () => {
               src={headerImage}
               alt="Article Header"
               style={{
-                width: "50%",
+                width: "70%",
                 height: "400px",
                 objectFit: "cover",
                 borderRadius: "8px",
               }}
             />
           </Box>
-          <Typography variant="body1" paragraph className="article-content">
+          <Divider className="article-divider" sx={{ marginY: 2 }} />
+          <Typography
+            variant="h5"
+            gutterBottom
+            className="article-section-title"
+            sx={{ fontWeight: "bold" }}
+          >
+            Indian Cities: Living Conditions
+          </Typography>
+          <Typography
+            variant="body1"
+            paragraph
+            className="article-content"
+            sx={{ lineHeight: 2.3 }}
+          >
             “Indian cities, I believe, are not great places to live even for
             their richest citizens, let alone for their less well-off citizens.
             In Mumbai, the poor live in slums and the rich live in small
@@ -54,15 +118,21 @@ const Article3: React.FC = () => {
             Nudge Forum in association with the Omidyar Network on the topic of
             strengthening the first-mile governance.
           </Typography>
-          <Divider className="article-divider" />
+          <Divider className="article-divider" sx={{ marginY: 2 }} />
           <Typography
             variant="h5"
             gutterBottom
             className="article-section-title"
+            sx={{ fontWeight: "bold" }}
           >
             The Role of Local Governance
           </Typography>
-          <Typography variant="body1" paragraph className="article-content">
+          <Typography
+            variant="body1"
+            paragraph
+            className="article-content"
+            sx={{ lineHeight: 2.3 }}
+          >
             The role of local governance in India is as crucial as it is
             under-appreciated. Capacity and issues around administrative powers
             have always proved to be a challenge that has restricted our cities
@@ -76,7 +146,12 @@ const Article3: React.FC = () => {
             have deliberated upon such existing gaps and practical ways to
             address this challenge.
           </Typography>
-          <Typography variant="body1" paragraph className="article-content">
+          <Typography
+            variant="body1"
+            paragraph
+            className="article-content"
+            sx={{ lineHeight: 2.3 }}
+          >
             One of the major challenges in urban local governance is the
             devolution of power. “If you don’t devolve financial functionaries
             and only devolve functions to the municipalities, they will be
@@ -87,22 +162,33 @@ const Article3: React.FC = () => {
             Administration has the power in itself that it won’t get affected
             with the change in government.”
           </Typography>
-          <Typography variant="body1" paragraph className="article-content">
+          <Typography
+            variant="body1"
+            paragraph
+            className="article-content"
+            sx={{ lineHeight: 2.3 }}
+          >
             Adding to what Dr. Rao said, Member of Parliament Poonam Mahajan
             stated, “Even though there is friction in functioning because of the
             difference in the local and state government party, in a democracy,
             even they are thriving and fighting to make sure that people get
             what they deserve and what they want.”
           </Typography>
-          <Divider className="article-divider" />
+          <Divider className="article-divider" sx={{ marginY: 2 }} />
           <Typography
             variant="h5"
             gutterBottom
             className="article-section-title"
+            sx={{ fontWeight: "bold" }}
           >
             Technological Role in Local Governance
           </Typography>
-          <Typography variant="body1" paragraph className="article-content">
+          <Typography
+            variant="body1"
+            paragraph
+            className="article-content"
+            sx={{ lineHeight: 2.3 }}
+          >
             Discussing the technological role and scope of technology in easing
             local level governance, the panelists pointed out that technological
             advancements are definitely needed in governance, but they should be

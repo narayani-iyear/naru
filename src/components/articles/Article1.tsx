@@ -1,16 +1,61 @@
 import React from "react";
-import { Box, Typography, Container, Paper, Divider } from "@mui/material";
+import {
+  Box,
+  Typography,
+  Container,
+  Paper,
+  Divider,
+  Breadcrumbs,
+  Link,
+} from "@mui/material";
 import headerImage from "../../assets/article1-header.png"; // Make sure to have a header image in the appropriate path
 
 const Article1: React.FC = () => {
   return (
-    <Container className="article-container">
+    <Container
+      maxWidth="md"
+      sx={{ maxWidth: "900px" }}
+      className="article-container"
+    >
       <Paper elevation={3} sx={{ borderRadius: "8px", overflow: "hidden" }}>
-        <Box sx={{ padding: 4 }}>
-          <Typography variant="h3" gutterBottom className="article-title">
+        <Box sx={{ padding: 4, backgroundColor: "#FAF3EF" }}>
+          <Breadcrumbs aria-label="breadcrumb" sx={{ marginBottom: 2 }}>
+            <Link color="inherit" href="/">
+              Home
+            </Link>
+            <Typography color="textPrimary">
+              Grassroots media and active citizenship
+            </Typography>
+          </Breadcrumbs>
+          <Typography
+            variant="h4"
+            gutterBottom
+            className="article-title"
+            sx={{ fontWeight: "bold" }}
+          >
             Grassroots media and active citizenship
           </Typography>
-          <Typography variant="body1" paragraph className="article-content">
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "space-between",
+              alignItems: "center",
+              marginBottom: 2,
+            }}
+          >
+            <Typography variant="body2" color="textSecondary">
+              Sept 22, 2021
+            </Typography>
+            <Typography variant="body2" color="textSecondary">
+              By Narayani Iyear
+            </Typography>
+          </Box>
+          <Typography
+            variant="body1"
+            paragraph
+            className="article-content"
+            sx={{ lineHeight: 2.3 }}
+          >
             The Nudge Forum conducted a virtual conference on 13th August, 2021
             where panelists Meera Devi (The bureau chief of Khabar Lahariya),
             Dhanya Rajendran (Editor in chief, The News Minute) and Barkha Dutt
@@ -18,7 +63,12 @@ const Article1: React.FC = () => {
             Grassroots media has a critical role to play in “pulling” government
             services, and “pushing” citizen participation.
           </Typography>
-          <Typography variant="body1" paragraph className="article-content">
+          <Typography
+            variant="body1"
+            paragraph
+            className="article-content"
+            sx={{ lineHeight: 2.3 }}
+          >
             How do these media-outlets view their role, and its limitations in
             enhancing citizen participation? How has this role of media changed
             and evolved over the years - driven by the technology
@@ -30,8 +80,8 @@ const Article1: React.FC = () => {
               src={headerImage}
               alt="Article Header"
               style={{
-                width: "50%",
-                height: "400px",
+                width: "70%",
+                height: "430px",
                 objectFit: "cover",
                 borderRadius: "8px",
               }}
@@ -41,10 +91,16 @@ const Article1: React.FC = () => {
             variant="h5"
             gutterBottom
             className="article-section-title"
+            sx={{ fontWeight: "bold" }}
           >
             The Role of Journalists
           </Typography>
-          <Typography variant="body1" paragraph className="article-content">
+          <Typography
+            variant="body1"
+            paragraph
+            className="article-content"
+            sx={{ lineHeight: 2.3 }}
+          >
             In the initial stage of the conference the discussions revolved
             around what is the role of journalists in the society, is it just
             reporting the issue fearlessly and without any bias and letting the
@@ -62,15 +118,21 @@ const Article1: React.FC = () => {
             that are unheard and often not given the deserved importance. We try
             to bring out issues in front of the world with a vision.”
           </Typography>
-          <Divider className="article-divider" />
+          <Divider className="article-divider" sx={{ marginY: 2 }} />
           <Typography
             variant="h5"
             gutterBottom
             className="article-section-title"
+            sx={{ fontWeight: "bold" }}
           >
             Challenges of Grassroots Media
           </Typography>
-          <Typography variant="body1" paragraph className="article-content">
+          <Typography
+            variant="body1"
+            paragraph
+            className="article-content"
+            sx={{ lineHeight: 2.3 }}
+          >
             Further explaining how the issues that do not have mass interest but
             are needed to be reported are neglected as the tyranny of
             advertising revenue models, tyranny of social media algorithm and
@@ -90,15 +152,21 @@ const Article1: React.FC = () => {
             should have they sync in order to amplify any local issue and make
             it of national importance” said Dhanya Rajendran.
           </Typography>
-          <Divider className="article-divider" />
+          <Divider className="article-divider" sx={{ marginY: 2 }} />
           <Typography
             variant="h5"
             gutterBottom
             className="article-section-title"
+            sx={{ fontWeight: "bold" }}
           >
             Fact-Based vs Opinionated News
           </Typography>
-          <Typography variant="body1" paragraph className="article-content">
+          <Typography
+            variant="body1"
+            paragraph
+            className="article-content"
+            sx={{ lineHeight: 2.3 }}
+          >
             Lastly the panelists stressed on how to differentiate between fact
             based and opinionated news as the role of media has changed and
             evolved over the years, the media has become part of our lives and
@@ -110,7 +178,7 @@ const Article1: React.FC = () => {
             be critical of all the information we receive daily. “Citizens have
             to cultivate the discipline of understanding. There’s no other way
             to help. We as an audience have to understand the shades of the
-            complexity of a story and comprehend what fact and opinion is.” Said
+            complexity of a story and comprehend what fact and opinion is.” said
             Barkha Dutt.
           </Typography>
         </Box>
